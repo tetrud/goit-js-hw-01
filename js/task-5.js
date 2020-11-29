@@ -2,10 +2,12 @@
 // Задание-5
 
 let country = prompt ('Введите страну доставки');
-country = country.toLowerCase();
 let cost;
 
-switch (country) {
+if(country === null){
+  alert('Отменено пользователем!');
+} else {
+switch (country.toLowerCase()) {
   case 'китай': {
         cost = 100;
         country = 'Китай'
@@ -37,6 +39,4 @@ switch (country) {
       alert('В вашей стране доставка не доступна');
 }
 
-if(country === null){
-  alert('Отменено пользователем!');
 }
